@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AC80B636-0E90-4B97-BBFA-198749698463}</ProjectGuid>
+    <ProjectGuid>{4D47483D-BFA7-4AE3-ACD5-CAFF2FA040E4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UrunYonetimi</RootNamespace>
-    <AssemblyName>UrunYonetimi</AssemblyName>
+    <RootNamespace>UrunYonetimiAdo</RootNamespace>
+    <AssemblyName>UrunYonetimiAdo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,6 +61,7 @@
     <Compile Include="Models\Urun.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrunDuzenlendiEventArgs.cs" />
     <EmbeddedResource Include="DuzenleForm.resx">
       <DependentUpon>DuzenleForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,7 +77,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

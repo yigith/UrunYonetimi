@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UrunYonetimi.Properties
+namespace UrunYonetimiAdo.Properties
 {
 
 

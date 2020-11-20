@@ -4,17 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UrunYonetimi.Models
+namespace UrunYonetimiAdo.Models
 {
     public class Urun
     {
+        public int Id { get; set; }
         public string UrunAd { get; set; }
         public decimal BirimFiyat { get; set; }
-        public string BirimFiyatTL => $"{BirimFiyat:0.00}₺";
-
-        public override string ToString()
-        {
-            return string.Format("{0} ({1:0.00}₺)", UrunAd, BirimFiyat);
-        }
     }
 }
